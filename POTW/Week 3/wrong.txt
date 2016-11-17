@@ -1,1 +1,0 @@
-Didn't account for the divide by 0 case, and will crash b/c of it
