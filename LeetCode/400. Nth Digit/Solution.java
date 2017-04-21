@@ -1,3 +1,7 @@
+// Solution.java
+// Nicholas Culmone
+// 420 2017
+
 import java.util.*;
 
 public class Solution {
