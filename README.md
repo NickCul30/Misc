@@ -1,2 +1,2 @@
 # Misc
-Some random stuff
+Various solutions to Online Judges and competition questions.
