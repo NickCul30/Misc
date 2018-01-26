@@ -1,0 +1,10 @@
+#!/bin/bash
+ids=(`grep $1 courses | cut -d $'\t' -f 1`)
+size=${#ids[*]}
+if [ $size -eq 0 ]; then
+	echo "Course not found"
+fi
+
+for i in ${ids[*]}; do
+	echo `grep $i emails | cut -d $'\t' -f 2`
+done

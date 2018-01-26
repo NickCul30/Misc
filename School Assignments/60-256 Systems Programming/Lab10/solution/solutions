@@ -1,0 +1,16 @@
+#!/bin/bash
+names=(`ls`)
+size=${#names[*]}
+compscis=()
+
+# Makes array of compsci courses
+for((i=0;i<size;i++)) do
+	name=${names[$i]}
+	if [[ $name == "60-"* ]]; then
+		compscis+=($name)
+	fi
+done
+
+for i in ${compscis[*]}; do
+	echo $i
+done

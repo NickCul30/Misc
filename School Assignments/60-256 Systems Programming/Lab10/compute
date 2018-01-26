@@ -1,0 +1,19 @@
+#!/bin/bash
+files=(`ls`)
+size=${#files[*]}
+echo "practice: shell command and array"
+
+echo ${files[*]}
+echo -n "list all directories in current directory: "
+for i in ${files[*]}; do
+	echo -n "$i "
+done
+echo ""
+
+echo "total number of files and directories: $size"
+echo "the first element in this list: ${files[0]}"
+
+echo "all elements in this list:"
+for i in ${files[*]}; do
+	echo "$i"
+done
